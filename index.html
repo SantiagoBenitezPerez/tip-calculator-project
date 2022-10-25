@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tip calculator</title>
+  </head>
+  <body>
+    <div class="parent">
+      <div id="container1" class = "containers">
+        <h2 id="title" class="text">Tip Calculator</h2>
+        <div id="input-container">
+          <h3 class="text" id="total-text">Bill</h3>
+          <div class="inner-input-containers">
+          <span class="text">$</span><input class="input-text" type="text" id="bill-input" placeholder="0.00" />
+          </div>
+        
+          <h3 class="text">Tip</h3>
+          <div  class="inner-input-containers">
+          <span class="text">%</span><input class="input-text" type="text" id="tip-input" placeholder="10" />
+         </div>
+        </div>
+      </div>
+
+      <div id="container2" class="containers">
+        <div id="accumulator">
+          <h3 class="text">People</h3>
+          <div id="btn-container">
+            <input  class="accum-btn" type="button" value="-" />
+            <h3 class="text" id="people">1</h3>
+            <input class="accum-btn"  type="button" value="+" />
+          </div>
+        </div>
+
+        <div id="total-bill">
+          <h3 class="text">Total per Person</h3>
+          <div id="total" class="text">$0.00</div>
+        </div>
+      </div>
+
+      <div class= "containers" id="clearBtn-container">
+        <button id = "clear-btn">Clear Calculator</button>
+      </div>
+
+      
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>

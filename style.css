@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Titan+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #f3f7ba;
+    --font-fam: 'Kalam', cursive;
+}
+
+body {
+    background-color:#c3e9d8;
+}
+.parent {
+    background-color: #203837;
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    margin-top: 55px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+}
+
+@media (max-width: 445px) {
+    .parent {
+        width: 300px;
+    }
+
+    #title {
+        margin-top: 80px;
+    }
+
+    .inner-input-containers {
+        display: flex;
+    }
+
+    .text {
+        font-size: 20px
+    }
+
+    #container2 {
+        margin-top: 25px;
+    }
+
+    #clear-btn {
+        font-size: 11px;
+        height: 30px;
+        
+    }
+}
+
+.containers {
+    height:240px;
+}
+
+#container1 {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    justify-content: space-around;
+}
+
+#container2 {
+    height: 120px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#input-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
+}
+
+
+#btn-container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#total-bill {
+    padding: 8px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    /* background-color: black; */
+}
+
+#total-bill h3 {
+    margin-top:28px;
+}
+
+#title {
+   text-align: center;
+ }
+
+ .text {
+    margin: 6px;
+    color: var(--main-color);
+    font-family: var(--font-fam);
+ }
+
+ input[type="text"]
+{
+    font-size:24px;
+    font-family: var(--font-fam);
+    color: var(--main-color);
+}
+
+.input-text {
+    border-radius: 8px; 
+    width: 90%;
+    height: 27px;
+    margin-left: 3px;
+    padding: 14px;
+    background-color: rgb(80, 74, 74);
+ }
+
+ .accum-btn {
+    height: 80%;
+    width: 90%;
+    align-self:center;
+    border-radius: 50%;
+    border: 1px;
+    font-size: 20px;
+ }
+
+ #total {
+    align-self: end;
+    margin-top: -5px;
+    font-size: 40px;
+ }
+
+ #clearBtn-container {
+    position: relative;
+ }
+
+ button {
+    width: 30%;
+    margin:auto;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: rgb(63, 49, 49);
+    font-size: 15px;
+    font-family:  var(--font-fam);
+    color: var(--main-color);
+    position:absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+ }
+
+ button:hover, .accum-btn:hover {
+    transform:scale(1.1);
+    cursor: pointer;
+ }
